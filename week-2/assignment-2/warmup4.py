@@ -2,7 +2,7 @@ date = "October 10, 2026"
 time = "11:00 pm"
 temperature = "75 degrees"
 
-print(f"It is now{time} on {date} and the temperature is {temperature}.")
+print(f"It is now {time} on {date} and the temperature is {temperature}.")
 
 
 #  File "C:\Users\User\desktop\Code the Dream\python-intro-homework\week-2\assignment-2\warmup4.py", line 5, in <module>
