@@ -1,7 +1,7 @@
 student = {"name": "Solimar", "grade": "87", "subjects": ["Geometry", "Geography", "Literature"]}
 
-for item in student:
-    print(f"{item}: {student[item]}")
+for key, value in student.items():
+    print(key, value)
 
 student["graduated"] = False
 
