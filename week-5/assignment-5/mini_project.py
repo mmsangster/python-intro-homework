@@ -1,5 +1,6 @@
 
 # Provided data
+
 numbers = [42, 17, 83, 5, 61, 29, 74, 8, 55, 93, 31, 66, 14, 47, 78, 3, 59, 22, 86, 40]
 
 # Menu
@@ -44,22 +45,20 @@ while ans:
         
         target = int(input("\nWhat number do you want to find?: "))
         
-        def linear_search(numbers, target):
-            for i in range(len(numbers)):
-                if numbers[i] == target:
-                    return i
-            return -1
-            
-        result = linear_search(numbers, target)
- 
- # Print result of linear search for user's target number
- 
-        if result != -1:
-            print(f"\nYour number, {target}, was found at index {numbers.index(target)}.")
-        else:
-            print(f"\nYour number, {target}, was not found.")
- 
+        found = False
+        index = -1
         
+        for i in range(len(numbers)):
+            if numbers[i] == target:
+                found = True
+                index = i
+                print(f"\nYour number, {target}, was found at index {index}.")
+                break
+            
+        if not found:
+            print(f"\nYour number, {target}, was not found.")
+            
+ 
 # Bubble sort of sliced numbers list
 
     elif ans=="4":
