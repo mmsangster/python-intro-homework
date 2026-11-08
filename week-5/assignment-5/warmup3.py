@@ -3,8 +3,7 @@
 
 names = ["Akatosh", "Arkay", "Dibella", "Julianos", "Kynareth", "Mara", "Stendarr", "Talos", "Zenithar"]
 index = -1
-user_target = input("Please enter the name you'd like to find: ")
-user_target = user_target.strip().capitalize()
+user_target = input("Please enter the name you'd like to find: ").strip().capitalize()
 
 for i in range(len(names)):
     if names[i] == user_target:
