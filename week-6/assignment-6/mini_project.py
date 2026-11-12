@@ -80,11 +80,11 @@ def main():
         
         if ans == "1":
             result = find_min(numbers)
-            print(f"The minimum number is: {result}.")
+            print(f"\nThe minimum number is: {result}.")
             
         elif ans == "2":
             result = find_max(numbers)
-            print(f"The maximum number is: {result}.")
+            print(f"\nThe maximum number is: {result}.")
             
         elif ans == "3":
             search_num = int(input("\nWhat number do you want to find? "))
