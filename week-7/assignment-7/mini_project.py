@@ -2,9 +2,6 @@
 import os
 import csv
 
-
-path = os.path.join('..', 'data', 'expenses.csv')
-
 if os.path.exists('c:/users/user/desktop/code the dream/python-intro-homework/week-7/data/expenses.csv'):
     print('The file was found.')
 
@@ -20,7 +17,7 @@ if os.path.exists('c:/users/user/desktop/code the dream/python-intro-homework/we
     now = datetime.now()
 
     with open('food_report.txt', 'w') as file:
-        file.write(f"Food Expense Report - generated: {now.strftime('%B %d, %Y')}")
+        file.write(f"Food Expense Report — generated {now.strftime('%B %d, %Y')}")
 
     with open('c:/users/user/desktop/code the dream/python-intro-homework/week-7/data/expenses.csv') as csv_file, \
         open('food_report.txt', 'a', encoding='utf-8') as txt_file:
